@@ -41,16 +41,6 @@ void delay(void);
  */
 void gpio_init(void);
 
-void delay(void)
-{
-    volatile unsigned int i,j;
-
-    for (i = 0U; i < 5000U; i++) {
-        for (j = 0U; j < 100U; j++) {
-            __asm__("nop");
-        }
-    }
-}
 
 #if defined (__cplusplus)
 }

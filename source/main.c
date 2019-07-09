@@ -19,17 +19,48 @@
 #include"Touch_Sen.h"
 #include"Seg_LCD.h"
 
-int main(void)
-{
-    SegLCD_Init();
-    Touch_Init();
-    while(1){
-        int i = Touch_Scan_LH();
-        SegLCD_DisplayDecimal(i);
-        //delay();
+//choose Example code
+// must choose one
+//*********************************************
+//#define BLINK_LED
+#define LCD_TEST    
+
+//********************************************
+#ifdef BLINK_LED
+    int main(void)
+    {
+        initLedRed;
+        initLedYellow;
+        while(1){
+            toggleLedRed;
+            toggleLedYellow;
+            delay();
+        }
+
     }
-    
 
+#else LCD_TEST
+    //todo
+    int main(void)
+    {
+        SegLCD_Init(); // init LCD 
+        register unsigned int count =0;
+        while(1){
+            SegLCD_DisplayDecimal(count);
+            ++count;
+            delay(); 
+        }
+    }
+#endif 
+
+
+void delay(void)
+{
+    volatile unsigned int i,j;
+
+    for (i = 0U; i < 5000U; i++) {
+        for (j = 0U; j < 100U; j++) {
+            __asm__("nop");
+        }
+    }
 }
-
-

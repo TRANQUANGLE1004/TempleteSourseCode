@@ -6,9 +6,11 @@
 #define toggleLedRed  PTE->PTOR = (1U << LED_RED)
 #define toggleLedYellow  PTD->PTOR = (1U << LED_YELLOW)
 
-//typedef unsigned int uint32_t;
-#define initLedRed  initPortE(LED_RED,1)
-#define initLedYellow  initPortD(LED_YELLOW,0)
+//init LED BUILD IN
+// 1 is NOT BRIGHT
+// 0 is BRIGHT
+#define initLedRed  initPortE(LED_RED,1)  // init LED RED LOW
+#define initLedYellow  initPortD(LED_YELLOW,0) //init LED YELLOW HIGh
 
 //
 void initPortE(uint32_t pin,uint32_t initValue);
