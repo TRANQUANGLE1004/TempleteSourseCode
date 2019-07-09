@@ -4,6 +4,8 @@ This project write for linux environment.
 
 This project has a cross-compiler arm in the environment folder.
 
+This project has some example code.
+
 ## Getting Started
 
 you must replace BOARD in Makefile equal the location of your board. 
