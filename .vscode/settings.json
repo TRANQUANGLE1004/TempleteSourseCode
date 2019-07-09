@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "gpio.h": "c",
+        "mkl46z4.h": "c",
+        "touch_sen.h": "c",
+        "main.h": "c"
+    }
+}
