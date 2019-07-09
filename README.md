@@ -14,6 +14,11 @@ you add new header file in header folder.
 
 you add new source file in source folder.
 
+## Reference 
+
+* [Linker script](https://github.com/0xc0170/kinetis_klxx_gcc) - Reference form kinetis_klxx_gcc project
+
+* [sys_lib](https://github.com/0xc0170/kinetis_klxx_gcc) - Reference form kinetis_klxx_gcc project
 
 ## Run 
 
